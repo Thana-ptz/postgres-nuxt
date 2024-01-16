@@ -7,6 +7,7 @@
         <h2 class="text-xl font-semibold">Recent Users</h2>
         <p class="text-sm text-gray-500">
           Fetched {{ users?.length }} users in {{ duration }}ms
+          Fetched {{ users?.name }} users in {{ duration }}ms
         </p>
       </div>
       <button class="hover:opacity-80" @click="refreshPage">
@@ -23,6 +24,13 @@
           <img
             :src="user.image"
             :alt="user.name"
+            :width="48"
+            :height="48"
+            class="rounded-full ring-1 ring-gray-900/5"
+          />
+          <img
+            :src="users.image"
+            :alt="users.name"
             :width="48"
             :height="48"
             class="rounded-full ring-1 ring-gray-900/5"
