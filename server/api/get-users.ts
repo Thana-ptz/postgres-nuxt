@@ -16,12 +16,12 @@ async function seed() {
   const users = await Promise.all([
     sql`
           INSERT INTO users (name, email, image)
-          VALUES ('Guillermo Rauch', 'rauchg@vercel.com', 'https://images.ctfassets.net/e5382hct74si/2P1iOve0LZJRZWUzfXpi9r/9d4d27765764fb1ad7379d7cbe5f1043/ucxb4lHy_400x400.jpg')
+          VALUES ('thana developer', 'thanathon.developer@thanabusiness.com', 'https://images.ctfassets.net/e5382hct74si/2P1iOve0LZJRZWUzfXpi9r/9d4d27765764fb1ad7379d7cbe5f1043/ucxb4lHy_400x400.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
           INSERT INTO users (name, email, image)
-          VALUES ('Lee Robinson', 'lee@vercel.com', 'https://images.ctfassets.net/e5382hct74si/4BtM41PDNrx4z1ml643tdc/7aa88bdde8b5b7809174ea5b764c80fa/adWRdqQ6_400x400.jpg')
+          VALUES ('THANATHON', 'thanathon@thanabusiness.com', 'https://images.ctfassets.net/e5382hct74si/4BtM41PDNrx4z1ml643tdc/7aa88bdde8b5b7809174ea5b764c80fa/adWRdqQ6_400x400.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
