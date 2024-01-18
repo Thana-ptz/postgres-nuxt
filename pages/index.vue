@@ -15,5 +15,5 @@
 </template>
 
 <script setup>
-const { data } = useFetch('/api/users')
+const { data } = useFetch('/api/thana')
 </script>
